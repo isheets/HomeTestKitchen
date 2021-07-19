@@ -25,7 +25,6 @@ class HomeView: UIView {
             anchors: [.centerX(0), .centerY(0)],
             relativeTo: self
         )
-
     }
 
     private lazy var label: UILabel = {

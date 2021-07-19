@@ -21,6 +21,19 @@ class HomeViewController: UIViewController {
         view = HomeView()
     }
 
+    override func viewDidLoad() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Add",
+            style: .done,
+            target: self,
+            action: #selector(addHandler)
+        )
+    }
+
     private let coord: Coordinator
     private let repo: Repo
+
+    @objc private func addHandler() {
+        print("add")
+    }
 }
