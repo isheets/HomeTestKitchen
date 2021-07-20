@@ -10,10 +10,12 @@ import Foundation
 import CoreData
 
 
+
+
 extension Recipe {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Recipe> {
-        return NSFetchRequest<Recipe>(entityName: "Recipe")
+    static public var fetchRequest: NSFetchRequest<Recipe> {
+        NSFetchRequest<Recipe>(entityName: "Recipe")
     }
 
     @NSManaged public var title: String
