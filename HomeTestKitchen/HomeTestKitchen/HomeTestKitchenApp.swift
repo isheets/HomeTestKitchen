@@ -15,7 +15,7 @@ struct HomeTestKitchenApp: App {
         store: .init(
           initialState: .init(),
           reducer: RecipeList.reducer.debug(),
-          environment: .init()
+          environment: .live
         )
       )
     }
